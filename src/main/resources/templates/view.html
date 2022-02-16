@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body th:object="${city}">
+<h1>City</h1><br><br><br>
+<p>Tên :  </p><p th:text="*{name}"></p>
+<p>Quốc Gia :  </p><p th:text="*{country.nameCountry}"></p>
+<p>Diện tích :  </p><p th:text="*{acreage}"></p>
+<p>Dân số :  </p><p th:text="*{population}"></p>
+<p>GDP :  </p><p th:text="*{GDP}"></p>
+<p>Giới thiệu :  </p><p th:text="*{description}"></p><br><br>
+<div class="container">
+    <button class="btn btn-outline-secondary"><a href="/city">Quay lại</a></button>
+</div>
+</body>
+</html>
